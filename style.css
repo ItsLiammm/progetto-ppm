@@ -981,7 +981,7 @@ html body{
     flex-basis: auto;
     flex-direction: row;
     text-decoration: none;
-
+    overflow-x: hidden;
 }
 
 .immBigCa{
@@ -1014,12 +1014,37 @@ html body{
     flex-basis: 41.6667%;
     position: relative;
     height: 100%;
-    right: 8.333333%;
+    margin-left: -8.333333%;
     padding-top: 24px;
     padding-left: 24px;
     padding-right: 24px;
     padding-bottom: 50px;
     background-color: #ffffff;
+}
+
+@media all and (max-width:479px){
+    .linkBigCa{
+        flex-wrap: wrap;
+    }
+    .notiziaCa{
+        display: flex;
+        flex-basis: 91.66666667%;
+        margin-top: -32px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+        padding-top: 16px;
+        padding-right: 8.333333%;
+        box-sizing: border-box;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .immBigCa{
+        flex-basis: 100%;
+    }
+
 }
 
 @media all and (min-width:640px){
